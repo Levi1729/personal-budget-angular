@@ -6,10 +6,12 @@ describe('BreadcrumbComponent', () => {
   let component: BreadcrumbComponent;
   let fixture: ComponentFixture<BreadcrumbComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [BreadcrumbComponent]
-    });
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [BreadcrumbComponent]
+    })
+    .compileComponents();
+    
     fixture = TestBed.createComponent(BreadcrumbComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -1,18 +1,14 @@
-import { Component, Input } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'pb-article',
+  standalone: true,
+  imports: [],
   templateUrl: './article.component.html',
-  styleUrls: ['./article.component.scss']
+  styleUrl: './article.component.scss'
 })
 export class ArticleComponent {
-
-  @Input() title="Title";
-  @Input() content="Content";
-
-  constructor(){
-
-  }
-
+  @Input('title') title: string = 'Default Title';
+  @Input('content') content: string ='Default Content';
 
 }
