@@ -1,5 +1,5 @@
-# Info
+Install Angular.
 
-The path to NGInx main folder:
-/usr/share/nginx/html
+Modify Code accroding to the link.
 
+Edit and solve the errors
